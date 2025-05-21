@@ -3,7 +3,7 @@ import { Navbar } from './component/Navbar';
 import './App.css';
 import { CssBaseline, dividerClasses, ThemeProvider } from '@mui/material';
 import { darkTheme } from './Theme/DarkTheme';
-
+import Home from './component/Home/Home.jsx'
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
 
 
   <Navbar/>
+        <Home/>
       </ThemeProvider>
   );
 }

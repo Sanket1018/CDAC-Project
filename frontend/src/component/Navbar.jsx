@@ -4,6 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { pink } from '@mui/material/colors';
 import { Avatar } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import "./Navbar.css"
 
 
  export const Navbar = () => {
