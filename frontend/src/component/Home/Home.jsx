@@ -36,5 +36,6 @@ const Home = () => {
         </div>
     )
 }
+//Home Page is done
 
 export default Home 
