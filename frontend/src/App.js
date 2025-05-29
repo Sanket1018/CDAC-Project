@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import { Navbar } from './component/Navbar';
+import { Navbar } from './component/Navbar/Navbar.jsx';
 import './App.css';
 import { CssBaseline, dividerClasses, ThemeProvider } from '@mui/material';
 import { darkTheme } from './Theme/DarkTheme';

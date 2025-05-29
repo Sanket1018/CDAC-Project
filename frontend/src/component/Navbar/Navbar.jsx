@@ -13,7 +13,7 @@ import "./Navbar.css"
       
             <div className='lg:mr-10 cursor-pointer flex items-center space-x-4'>
                 <li className='logo font-semibold text-gray-300 text-2xl'>
-                  San Food
+                  VFood
                 </li>
             </div>
             <div className='flex items-center space-x-2 lg:space-x-10'>
