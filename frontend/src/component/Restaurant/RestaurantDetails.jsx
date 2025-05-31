@@ -1,5 +1,6 @@
 
 import React,{ useState} from 'react';
+import MenuCard from './MenuCard';
 import { 
   FormControl, 
   Grid, 
@@ -7,7 +8,7 @@ import {
   RadioGroup, 
   Radio,
   FormControlLabel,
-  Divider 
+  Divider
 } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
@@ -25,9 +26,9 @@ const foodTypes=[
     {label:"Vegetarian only",value:"vegetarian"},
     {label:"Non-Vegetarian", value:"non_vegetarian"},
     {label:"Seasonal",value:"seasonal"}
-]
+];
 
-
+const menu = [1,1,1,1,1,1,]
 
 
 
@@ -94,8 +95,8 @@ const RestaurantDetails = () => {
         {/* <Divider/> */}
 
         <section className='pt-[2rem] lg:flex relative'>
-            <div className='space-y-10 lg:w-[20%] filter'>
-               <div className='box space-y-5 lg:sticky top-28'>
+            <div className='space-y-10 lg:w-[20%] filter '>
+               <div className='box space-y-5 lg:sticky top-28 p-5 shadow-md'>
                     <div>
                         <Typography variant='h5' sx={{paddingBottom:"1rem"}}>
                              Food Type
@@ -113,6 +114,7 @@ const RestaurantDetails = () => {
                         </FormControl>
                            
                     </div>
+                    <Divider/>
                      <div>
                         <Typography variant='h5' sx={{paddingBottom:"1rem"}}>
                              Food Category
@@ -135,14 +137,10 @@ const RestaurantDetails = () => {
 
             </div>
              <div className='space-y-5 lg:w-[80%] lg:pl-10'>
-                menu
+{menu.map((item) => <MenuCard/>)}
 
             </div>
-
-
         </section>
-        
-      
     </div>
   )
 }
